@@ -16,7 +16,7 @@ public class Organizzazione {
 
     private String nomeNazione;
 
-    @OneToMany (mappedBy = "nazione")
+    @OneToMany (mappedBy = "organizzazione")
     private Set<Rilevamento> rilevamenti=new HashSet<>();
 
     public Set<Rilevamento> getRilevamenti() {

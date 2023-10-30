@@ -43,13 +43,13 @@ public class BootStrap implements CommandLineRunner {
         europa.setNomeNazione("Europa");
         europa= organizzazioneRepository.save(europa);
 
+        /*
+        //Prova singolo inserimento Rilevamento
         Rilevamento r1 = new Rilevamento();
         r1.setImporto(5.75f);
         r1.setDataRilevamento(LocalDateTime.now());
         r1.setNazione(italia);
         r1=rilevamentoRepository.save(r1);
-
-        /*
         italia.getRilevamenti().add(r1);
         italia = nazioneRepository.save(italia);*/
 
